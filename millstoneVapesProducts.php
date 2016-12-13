@@ -32,8 +32,31 @@
 					<b><span id="vapeMakeModel"></span></b>
 				</td>
 
+				<?php
+								// open a file for reading
+								$fp = fopen("products.txt", "r");
+								if ($fp) {
+									// set up the table for structured output
+									echo "<table border='2' width='75%' rows='6'>";
+									echo "<tr><th>Id</th><th>Make</th><th>Model</th><th>Price</th><th>Rating</th><th>Stock</th><th>Image</th></tr>";
+									// read the data line by line
+									while (($buffer = fgets($fp)) != FALSE)  {
+										// remove whitespace
+										$buffer = trim($buffer);
+										// extract the component parts of the line
+										$data = explode(',', $buffer);
+										// display the data
+										$data[3]=trim($data[3]); // remove whitespace from price data
+										echo "<tr><td>$data[0]</td><td>$data[1]</td><td>$data[2]</td><td>�$data[3]</td><td>$data[4]</td><td>$data[5]</td><td><input type='button' value='ShowImage' onClick='showImage(\"$data[6]\",\"$data[1]\",\"$data[2]\");'/></td></tr>";
+									}
+									// close table
+									echo "</table>";
+									// close the file
+									fclose($fp);
+								}
+							?>
 				<td>
-
+ <!--
           <form action="purchaseForm.php" method="post">
               Aspire K4: <input type="hidden" name="Product" value="Hello"> <input type="hidden" name="Price" value="240">
                 <input type="submit" name="button_1" value="Click me"> </br>
@@ -86,7 +109,7 @@
 
 
 			</table></left>
-
+		-->
 	</div></center>
 </body>
 </html>
