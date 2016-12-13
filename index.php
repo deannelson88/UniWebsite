@@ -20,16 +20,16 @@
 	<!-- BUTTONS -->
 
 	<div align="center">
-			<img src="homeButton.png" alt="Home Button" onmouseover="this.src='homeRoll.png'" onmouseout="this.src='homeButton.png'" onclick="window.location.href='millstoneVapesHome.php'"/>
-			<img src="productsButton.png" alt="Products Button" onmouseover="this.src='productsRoll.png'" onmouseout="this.src='productsButton.png'" onclick="window.location.href='millstoneVapesProducts.php'"/>
-			<img src="contactButton.png" alt="Contact Us Button" onmouseover="this.src='contactRoll.png'" onmouseout="this.src='contactButton.png'" onclick="window.location.href='millstoneVapesContact.php'"/>
-			<img src="simsButton.png" alt="Sims Button" onmouseover="this.src='simsRoll.png'" onmouseout="this.src='simsButton.png'" onclick="window.location.href='millstoneVapesNews.php'"/>
-
+			<img src="homeButton.png" alt="Home Button" onclick="window.location.href='index.php'"/>
+			<img src="productsButton.png" alt="Products Button" onclick="window.location.href='millstoneVapesProducts.php'"/>
+			<img src="contactButton.png" alt="Contact Us Button" onclick="window.location.href='millstoneVapesContact.php'"/>
+			<img src="newsButton.png" alt="News Button" onclick="window.location.href='millstoneVapesNews.php'"/>
 	</div >
 
 	<!-- BODY TEXT -->
 
-	<center><div style="background-color:#4f4f4f;width:850px;color:white;font-family:verdana;text-align:left;">
+	<center>
+		<div style="background-color:#258930;width:850px;color:white;font-family:verdana;text-align:left;">
 
 	<center>
 		<iframe src="http://free.timeanddate.com/countdown/i5hh96bb/n919/cf11/cm0/cu4/ct0/cs1/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw320/szh135/tatDeals%20End%20In/tac000/tpc000/iso2016-12-30T00:00:00" allowTransparency="true" frameborder="0" width="300" height="38"></iframe>
@@ -45,7 +45,7 @@
 	<br>
 	<div align="center">
 		<!--<img src="promoPic2.png" alt="Xperia Z3 Promo Pic" style="border-style:solid;border-width:1px;border-color:white;"/> -->
-		<img src="promoPic.png" alt="IPhone Promo Pic" style="border-style:solid;border-width:1px;border-color:white;"/>
+		<img src="promoPic.png" alt="Vape Promo Pic" style="border-style:solid;border-width:1px;border-color:white;"/>
 	</div >
 </center>
 </body>
