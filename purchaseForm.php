@@ -119,7 +119,11 @@
 
 </head>
 <body>
-
+	<?php
+		// get data posted from enterPaymentDetails.php
+		$productName=$_POST['productName'];
+		$productPrice=$_POST['price'];
+	?>
 	<!-- BANNER -->
 
 	<div>
@@ -137,7 +141,7 @@
 
 	<center><div style="background-color:#258930;width:850px;color:white;font-family:verdana;text-align:left;">
 
-	You are about to purchase <?php echo $_POST["Product"]; ?> at £ <?php echo $_POST["Price"]; ?> 	<p> Fields marked with '<span class="required">*</span>' must be completed </p>
+	You are about to purchase <?php echo $productName; ?> at £ <?php echo $productPrice; ?> 	<p> Fields marked with '<span class="required">*</span>' must be completed </p>
 	<form id="purchaseForm" method="post" action="purchaseConfirmation.php" onSubmit="return validate();">
 	<table cols="2" width="100%">
 		<tr>
