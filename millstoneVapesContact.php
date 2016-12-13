@@ -32,20 +32,34 @@
 
 	<center><div style="background-color:#258930;width:850px;color:white;font-family:verdana;text-align:left;">
 
-		   Need to contact us?
-		<p>Telephone Number: 028 123456789</p>
-		<p>Email: MillstoneVapes@gmail.com</p>
-		<p>Twitter: @MillstoneVapes</p>
-		<p>Facebook: /MillstoneVapes</p>
+		<P>Need some help? Contact us!</p>
+
+		<p><b>Telephone Number:</b> 028 123456789</p>
+		<p><b>Address:</b> Unit 10 </p>
+		<p>Loughanhill Industrial Estate </p>
+		<p>Coleraine </p>
+		<p>BT52 2NR </p>
+		<p>Northern Ireland </p>
+		<p><b>Email:</b> MillstoneVapes@gmail.com</p>
+		<p><b>Twitter:</b> @MillstoneVapes</p>
+		<p><b>Facebook:</b> /MillstoneVapes</p>
 
 
 		<p> At Millstone Vapes we take our customers thoughts on the quality of our website seriously, if you have any comments please leave them below.</p>
-Comments:<br />
-<textarea name="comments" id="comments">
-Have a comment? Leave it here.
-</textarea><br />
-<input type="button" value="Submit" onClick="submitComment();" />
-	</div>
-</center>
+		<p>Comments:</p><br />
+
+		<center>
+			<textarea name="comments" id="comments"rows="10" cols="40">
+		Have a comment? Leave it here.
+		</textarea><br />
+		<input type="button" value="Submit" onClick="submitComment();" />
+
+		<p><u>You can find us here!!</u></p>
+
+		<img src="facebook2.png" alt="Facebook"  width="350" height="150"/>
+				<br />
+		<img src="Map.png" alt="Map" />
+
+	</center>
 </body>
 </html>
