@@ -1,4 +1,4 @@
-0, Canon, 20d, 899, 9.5,14, Canon_20d.jpg
-1, Fuji, 9500, 499, 9.1,23, Fuji_9500.jpg
-2, Sony, r1, 299, 8.6,33, Sony_r1.jpg
-3, Fuji, s3 pro, 799, 8.9,21, Fuji_s3pro.jpg
+0, Movkin,150W, 47.99, 5,14, disguiser.jpg
+1, Neon,70W, 69.99, 4.7,23, neon1.jpg
+2, Tesla,60W, 44.99, 4.6,33, nano1.jpg
+3, Smok,200W, 37.99, 4.8,21, smok200w.jpg

@@ -35,14 +35,14 @@
 			<input type="button" value="Print" onClick="window.print()"/>
 			<p>Thank you for making a purchase at Millstone Vapes!</p>
 			<p>Order Number: <b>4588684</b>
-			<p>  <? echo $surname?>, your delivery could take up to 5 working days.<br/>
-					To: , 					</p>
+			<p>  <?php echo $_POST["firstName"]; ?>, your delivery could take up to 5 working days.<br/>
+					To: <?php echo $_POST["firstName"]; ?>,<?php echo $_POST["lastName"]; ?> at <?php echo $_POST["address1"]; ?>					</p>
 			<p> <u>Purchase details confirmation </u><br/>
 			<table>
-				<tr><td><b> Make / Model </b></td><?php echo $_POST["mobileMakeModel"]; ?><td></td></tr>
-				<tr><td><b> Price </b></td><td>£0.00</td></tr>
-				<tr><td><b> Quantity </b></td><td>0</td></tr>
-				<tr><td><b> Total price </b></td><td>£0.00</td></tr>
+				<tr><td><b> Make / Model </b></td><td><?php echo $_POST["productName"]; ?></td></tr>
+				<tr><td><b> Price </b></td><td>£<?php echo $_POST["productPrice"]; ?></td></tr>
+				<tr><td><b> Quantity </b></td><td><?php echo $_POST["productQuality"]; ?></td></tr>
+				<tr><td><b> Total price </b></td><td>£<?php echo $_POST["productPrice"]; ?></td></tr>
 			</table>
 
 			Click <a href='index.php'> here </a> to return to the home page.

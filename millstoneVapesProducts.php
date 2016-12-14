@@ -49,7 +49,7 @@
 				if ($fp) {
 					// set up the table for structured output
 					echo "<table border='2' width='75%' rows='6'>";
-					echo "<tr><th>Id</th><th>Make</th><th>Model</th><th>Price</th><th>Rating</th><th>Stock</th><th>Image</th></tr>";
+					echo "<tr><th>Make</th><th>Power</th><th>Price</th><th>Rating</th><th>Stock</th><th>Image</th></tr>";
 					// read the data line by line
 					while (($buffer = fgets($fp)) != FALSE)  {
 						// remove whitespace
@@ -58,7 +58,7 @@
 						$data = explode(',', $buffer);
 						// display the data
 						$data[3]=trim($data[3]); // remove whitespace from price data
-						echo "<tr><td>$data[0]</td><td>$data[1]</td><td>$data[2]</td><td>&pound;$data[3]</td><td>$data[4]</td><td>$data[5]</td><td><input type='button' value='ShowImage' onClick='showImage(\"$data[6]\",\"$data[1]\",\"$data[2]\");'/></td></tr>";						
+						echo "<tr><td>$data[1]</td><td>$data[2]</td><td>&pound;$data[3]</td><td>$data[4]</td><td>$data[5]</td><td><input type='button' value='ShowImage' onClick='showImage(\"$data[6]\",\"$data[1]\",\"$data[2]\");'/></td></tr>";						
 					}
 					
 					
@@ -69,24 +69,23 @@
 				}
 			?>
 			
-				                </td>
-					
+		</td>
 		<td>
 
                 <form action="purchaseForm.php" method="post">
-                    <input type="hidden" name="productName" value="Pen"> <input type="hidden" name="price" value="240">
+                    <input type="hidden" name="productName" value="Movkin"> <input type="hidden" name="price" value="47.99">
                         <input type="submit">
 						</form>
 			<form action="purchaseForm.php" method="post">
-                    <input type="hidden" name="productName" value="ddfgdf"> <input type="hidden" name="price" value="2342">
+                    <input type="hidden" name="productName" value="Neon"> <input type="hidden" name="price" value="69.99">
                         <input type="submit">
 						</form>
 			<form action="purchaseForm.php" method="post">
-                    <input type="hidden" name="productName" value="ddfgdf"> <input type="hidden" name="price" value="2342">
+                    <input type="hidden" name="productName" value="Tesla"> <input type="hidden" name="price" value="44.99">
                         <input type="submit">
 						</form>
 			<form action="purchaseForm.php" method="post">
-                    <input type="hidden" name="productName" value="ddfgdf"> <input type="hidden" name="price" value="2342">
+                    <input type="hidden" name="productName" value="Smok"> <input type="hidden" name="price" value="37.99">
                         <input type="submit">
 						</form>
 		</td>

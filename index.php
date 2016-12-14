@@ -44,6 +44,7 @@
 	<center>Check out our Products now and grab yourself a bargain!</center><br>
 	<br>
 	<div align="center">
+
 		<!--<img src="promoPic2.png" alt="Xperia Z3 Promo Pic" style="border-style:solid;border-width:1px;border-color:white;"/> -->
 		<img src="promoPic.png" alt="Vape Promo Pic" style="border-style:solid;border-width:1px;border-color:white;"/>
 	</div >

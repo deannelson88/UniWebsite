@@ -201,15 +201,14 @@
 
 		<tr>
 			<td> </td>
+			<input type='hidden' name='productName' value='<?php echo $productName; ?>'>
+			<input type='hidden' name='productPrice' value='<?php echo $productPrice; ?>'>
+			<input type='hidden' name='productQuality' value='1'>
 			<td><br><input type="submit" value="Complete Purchase" /> </td>
 
 		</tr>
 
-		<input type='hidden' name='mobileMakeModel' value=''>
-		<input type='hidden' name='mobilePrice' value=''>
-		<input type='hidden' name='mobileStock' value=''>
-		<input type='hidden' name='mobileQuantity' value=''>
-		<input type='hidden' name='mobileId' value=''>
+
 
 	</table>
 	</form>
