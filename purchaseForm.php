@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script type="text/javascript">
 
+	//Validation
 	function validate()
 	{
 		var theForm = document.getElementById("purchaseForm");
@@ -72,22 +73,19 @@
 			isCorrect=false;
 		}
 
-		// check no more than 3 chars (and no less than 2) following last '.' character in email
-		// so .co.uk is OK, as is .com, but .x or .cccc are not
-
-		// get length of email entered
+		//Email validation
 		var len = theForm.email.value.length;
 
-		// get position of last occurance of '.'
+
 		var lastDotPos = theForm.email.value.lastIndexOf('.');
 
-		// get number of chars after last '.'
+
 		var numCharsAfterLastDot=len-lastDotPos;
 
-		// need to decrement numCharsAfterLastDot as lastIndexOf counts from 0
+
 		numCharsAfterLastDot--;
 
-		// check if a . character appears less than 2 or more than 3 characters from the end of the email
+
 		if (numCharsAfterLastDot<2)
 		{
 			errorStr = errorStr + "\nInvalid email - less than 2 characters following last .";
@@ -106,17 +104,14 @@
 		}
 		else
 		{
-			// show the problem fields
+
 			alert (errorStr);
 			return false;
 		}
 
 	}
 
-
 	</script>
-
-
 </head>
 <body>
 	<?php
@@ -207,9 +202,6 @@
 			<td><br><input type="submit" value="Complete Purchase" /> </td>
 
 		</tr>
-
-
-
 	</table>
 	</form>
 	</div>

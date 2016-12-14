@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Group Website</title>
+	<title>MillstoneVapes - News</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script type="text/javascript">
 
@@ -14,7 +14,7 @@
 	<!-- BANNER -->
 
 	<div>
-			<center><img src="Banner.png" alt="Phone Zone Banner"/></center>
+			<center><img src="Banner.png" alt="MillstoneVapes Banner"/></center>
 	</div>
 
 	<!-- BUTTONS -->
@@ -27,24 +27,42 @@
 
 	<center><div style="background-color:#258930;width:850px;color:white;font-family:verdana;text-align:left;">
 <!-- start feedwind code -->
-<script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><' + '/script>');</script>
-<script type="text/javascript">
-(function() {var params = {
-	rssmikle_url: "http://feeds.feedburner.com/mobileburn/news?format=xml|http://feeds.feedburner.com/mobileburn/news?format=xml",
-	rssmikle_frame_width: "850",rssmikle_frame_height: "1000",frame_height_by_article: "",rssmikle_target: "_top",
-	rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",
-	text_align: "left",text_align2: "left",corner: "on",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",
-	mcspeed: "20",sort: "New",rssmikle_title: "on",rssmikle_title_sentence: "Latest Mobile News",rssmikle_title_link: "",
-	rssmikle_title_bgcolor: "#258930",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#258930",
-	rssmikle_item_bgimage: "",rssmikle_item_title_length: "300",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",
-	rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "700",rssmikle_item_description_color: "#050505",
-	rssmikle_item_date: "gl1",rssmikle_timezone: "Europe/London",datetime_format: "%e.%m.%Y %l:%M:%S %p",item_description_style: "text",item_thumbnail: "full",
-	article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();
-	</script>
-<div style="font-size:10px; text-align:center; width:850px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a>
-	<!--Please display the above link in your web page according to Terms of Service.-->
+
+<div align="center">
+<script type="text/javascript" src="http://output58.rssinclude.com/output?type=js&amp;id=1112178&amp;hash=281824adb0f52a1f9f634277208697f6"></script>
+           <a class="twitter-timeline"  href="https://twitter.com/hashtag/vaping" data-widget-id="808828637214605312">#vaping Tweets</a>
 </div>
-	<!-- end feedwind code -->
+
+<script align="center">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
+js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>!function getTweets($hash_tag) {
+
+    $url = 'http://search.twitter.com/search.atom?q='.urlencode($hash_tag) ;
+    echo "<p>Connecting to <strong>$url</strong> ...</p>";
+    $ch = curl_init($url);
+    curl_setopt ($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    $xml = curl_exec ($ch);
+    curl_close ($ch);
+
+    $affected = 0;
+    $twelement = new SimpleXMLElement($xml);
+    foreach ($twelement->entry as $entry) {
+        $text = trim($entry->title);
+        $author = trim($entry->author->name);
+        $time = strtotime($entry->published);
+        $id = $entry->id;
+        echo "<p>Tweet from ".$author.": <strong>".$text."</strong>  <em>Posted ".date('n/j/y g:i a',$time)."</em></p>";
+</center>
+    }
+
+    return true ;
+}
+
+getTweets('#Vaping');
+</script>
+
+
 
 	</div></center>
 </body>
